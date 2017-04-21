@@ -1,13 +1,4 @@
 /*
-body {
-  background-color: #849d8f;
-  font-size: 16px;
-  line-height: 22px;
-  color: #323232;
-  font-weight: normal;
-  font-family: "Roboto", "Arial", sans-serif;
-}
-
 .slider-item-name {
   font-size: 60px;
   line-height: 72px;
@@ -23,6 +14,16 @@ body {
 }
 */
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -30,7 +31,12 @@ body {
 }
 
 body {
-  min-width: 1200px;
+  background-color: #849d8f;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  font-weight: normal;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 .clearfix::after {
@@ -42,15 +48,13 @@ body {
 .main-header {
   margin-bottom: 0px;
   /*Только для оформления сетки*/
-  background-color: hotpink;
+  outline: 1px solid hotpink;
 }
 
 .container {
-  width: 1144.8px;
+  width: 1200px;
   padding: 0 27.6px;
   margin: 0 auto;
-  /*Только для оформления сетки*/
-  background-color: #849d8f;
 }
 
 .menu-logo {
@@ -61,7 +65,7 @@ body {
   float: left;
   width: 500px;
   /*Только для оформления сетки*/
-  background-color: greenyellow;
+  outline: 1px solid greenyellow;
 }
 
 .catalog {
@@ -72,7 +76,7 @@ body {
   float: right;
   width: 400px;
   /*Только для оформления сетки*/
-  background-color: greenyellow;
+  outline: 1px solid greenyellow;
 }
 
 .order {
@@ -89,12 +93,12 @@ body {
   width: 250px;
   margin-top: 20px;
   /*Только для оформления сетки*/
-  background-color: greenyellow;
+  outline: 1px solid greenyellow;
 }
 
 .slider {
   /*Только для оформления сетки*/
-  background-color: green;
+  outline: 1px solid green;
 }
 
 .slider-item {
@@ -110,38 +114,44 @@ body {
 .offer {
   margin-bottom: 40px;
   /*Только для оформления сетки*/
-  background-color: red;
+  outline: 1px solid red;
 }
 
 .offer-left {
   float: left;
   width: 560px;
   /*Только для оформления сетки*/
-  background-color: yellow;
+  outline: 1px solid yellow;
 }
 
 .offer-right {
   float: right;
   width: 560px;
   /*Только для оформления сетки*/
-  background-color: yellow;
+  outline: 1px solid yellow;
 }
 
 .hit-gallery {
   margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   /*Только для оформления сетки*/
-  background-color: cyan;
+  outline: 1px solid cyan;
 }
 
-.gallery-item {
-  float: left;
-  width: 266.4px;
-  margin-right: 26.4px;
+.hit-gallery .gallery-item {
+  width: 267px;
+  margin-bottom: 40px;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
 }
 
-.gallery-item:last-child {
-  margin-right: 0;
-}
 
 .gallery-item img {
   border-radius: 50%;
@@ -150,7 +160,7 @@ body {
 .about {
   margin-bottom: 40px;
   /*Только для оформления сетки*/
-  background-color: salmon;
+  outline: 1px solid salmon;
 }
 
 .blog {
@@ -158,28 +168,28 @@ body {
   width: 560px;
   margin-bottom: 40px;
   /*Только для оформления сетки*/
-  background-color: white;
+  outline: 1px solid blue;
 }
 
 .subscribe {
   float: right;
   width: 560px;
   /*Только для оформления сетки*/
-  background-color: lime;
+  outline: 1px solid lime;
 }
 
 .map {
   clear: both;
   /*Только для оформления сетки*/
-  background-color: red;
-  min-height: 250px;
+  outline: 1px solid red;
+  min-height: 350px;
 }
 
 .address {
   float: right;
   width: 300px;
   /*Только для оформления сетки*/
-  background-color: white;
+  outline: 1px solid blue;
 }
 
 .feedback {
@@ -190,7 +200,7 @@ body {
   padding-top: 35px;
   padding-bottom: 30px;
   /*Только для оформления сетки*/
-  background-color: aqua;
+  outline: 1px solid aqua;
 }
 
 .footer-social {
@@ -198,54 +208,62 @@ body {
   width: 267px;
   margin-right: 26px;
   /*Только для оформления сетки*/
-  background-color: orange;
+  outline: 1px solid orange;
 }
 
 .footer-info {
   float: left;
   width: 400px;
   /*Только для оформления сетки*/
-  background-color: orange;
+  outline: 1px solid orange;
 }
 
 .footer-copyright {
   float: right;
   width: 267px;
   /*Только для оформления сетки*/
-  background-color: orange;
+  outline: 1px solid orange;
 }
 
 .breadcrumbs {
+  margin: 0;
   /*Только для оформления сетки*/
-  background-color: red;
+  outline: 1px solid red;
 }
 
 .choose-form {
   width: 880px;
   margin-bottom: 35px;
   /*Только для оформления сетки*/
-  background-color: lawngreen;
+  outline: 1px solid lawngreen;
 }
 
 .catalog-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 40px;
   /*Только для оформления сетки*/
-  background-color: lawngreen;
+  outline: 1px solid lawngreen;
 }
 
-.gallery-item {
+.catalog-gallery .gallery-item {
   width: 267px;
-  margin-right: 0px;
   margin-bottom: 40px;
+  /*Только для оформления сетки*/
+  outline: 1px solid red;
 }
+
 
 .catalog-paginator {
   width: 267px;
   /*Только для оформления сетки*/
-  background-color: yellow;
+  outline: 1px solid yellow;
 }
 
 
