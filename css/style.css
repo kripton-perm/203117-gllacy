@@ -43,7 +43,6 @@ body {
   margin-bottom: 0px;
   /*Только для оформления сетки*/
   background-color: hotpink;
-  min-height: 100px;
 }
 
 .container {
@@ -63,7 +62,6 @@ body {
   width: 500px;
   /*Только для оформления сетки*/
   background-color: greenyellow;
-  min-height: 100px;
 }
 
 .catalog {
@@ -72,10 +70,13 @@ body {
 
 .user-block {
   float: right;
-  width: 300px;
+  width: 400px;
   /*Только для оформления сетки*/
   background-color: greenyellow;
-  min-height: 100px;
+}
+
+.order {
+  display: none;
 }
 
 .search-form,
@@ -89,12 +90,10 @@ body {
   margin-top: 20px;
   /*Только для оформления сетки*/
   background-color: greenyellow;
-  min-height: 40px;
 }
 
 .slider {
   /*Только для оформления сетки*/
-  width: 100%;
   background-color: green;
 }
 
@@ -112,7 +111,6 @@ body {
   margin-bottom: 40px;
   /*Только для оформления сетки*/
   background-color: red;
-  min-height: 150px;
 }
 
 .offer-left {
@@ -120,7 +118,6 @@ body {
   width: 560px;
   /*Только для оформления сетки*/
   background-color: yellow;
-  min-height: 150px;
 }
 
 .offer-right {
@@ -128,14 +125,12 @@ body {
   width: 560px;
   /*Только для оформления сетки*/
   background-color: yellow;
-  min-height: 150px;
 }
 
 .hit-gallery {
   margin-bottom: 40px;
   /*Только для оформления сетки*/
   background-color: cyan;
-  min-height: 150px;
 }
 
 .gallery-item {
@@ -156,7 +151,6 @@ body {
   margin-bottom: 40px;
   /*Только для оформления сетки*/
   background-color: salmon;
-  min-height: 150px;
 }
 
 .blog {
@@ -164,8 +158,7 @@ body {
   width: 560px;
   margin-bottom: 40px;
   /*Только для оформления сетки*/
-  background-color: olive;
-  min-height: 150px;
+  background-color: white;
 }
 
 .subscribe {
@@ -173,7 +166,6 @@ body {
   width: 560px;
   /*Только для оформления сетки*/
   background-color: lime;
-  min-height: 150px;
 }
 
 .map {
@@ -188,7 +180,6 @@ body {
   width: 300px;
   /*Только для оформления сетки*/
   background-color: white;
-  min-height: 150px;
 }
 
 .feedback {
@@ -207,27 +198,55 @@ body {
   width: 267px;
   margin-right: 26px;
   /*Только для оформления сетки*/
-  background-color: white;
-  min-height: 50px;
+  background-color: orange;
 }
 
 .footer-info {
   float: left;
   width: 400px;
   /*Только для оформления сетки*/
-  background-color: white;
-  min-height: 50px;
+  background-color: orange;
 }
 
 .footer-copyright {
   float: right;
   width: 267px;
   /*Только для оформления сетки*/
-  background-color: white;
-  min-height: 50px;
+  background-color: orange;
 }
 
+.breadcrumbs {
+  /*Только для оформления сетки*/
+  background-color: red;
+}
 
+.choose-form {
+  width: 880px;
+  margin-bottom: 35px;
+  /*Только для оформления сетки*/
+  background-color: lawngreen;
+}
+
+.catalog-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  /*Только для оформления сетки*/
+  background-color: lawngreen;
+}
+
+.gallery-item {
+  width: 267px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+}
+
+.catalog-paginator {
+  width: 267px;
+  /*Только для оформления сетки*/
+  background-color: yellow;
+}
 
 
 
