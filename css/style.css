@@ -15,6 +15,8 @@ body {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: #849d8f;
   font-size: 16px;
   line-height: 22px;
@@ -37,7 +39,6 @@ body {
   margin-bottom: 530px;
 }
 
-
 .container {
   width: 1200px;
   padding: 0 27.6px;
@@ -53,45 +54,6 @@ body {
 .main-navigation {
   float: left;
   width: 500px;
-}
-
-.main-navigation a {
-  position: relative;
-  display: block;
-  padding: 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-right: 25px;
-  
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.active a {
-  padding: 10px 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 10px;
-  margin-left: -10px;
-  background-color: #cb765f;
-  border-radius: 25px;
-}
-
-.main-navigation a::after {
-  content: "";
-  display: block;
-  width: auto;
-  height: 1px;
-  background-color: #9cb0a5;
-}
-
-.active a::after {
-  content: "";
-  display: block;
-  width: auto;
-  height: 1px;
-  background-color: #cb765f;
 }
 
 .main-navigation ul {
@@ -110,9 +72,63 @@ body {
   vertical-align: top;
 }
 
+.main-navigation a {
+  position: relative;
+  display: block;
+  padding: 0;
+  padding: 10px 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  border-radius: 25px;
+  
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
 .catalog {
   display: none;
 }
+
+/*
+.main-navigation a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+.main-navigation a:hover::after {
+  display: none;
+}
+
+
+.catalog:hover + ul {
+  display: block;
+}
+
+.active a {
+  background-color: #cb765f;
+}
+
+.main-navigation a::after {
+  content: "";
+  display: block;
+  width: auto;
+  height: 1px;
+  background-color: #9cb0a5;
+}
+
+.active a::after {
+  content: "";
+  display: block;
+  width: auto;
+  height: 1px;
+  background-color: #cb765f;
+}
+*/
 
 .user-block {
   float: right;
@@ -625,21 +641,20 @@ body {
 
 .map {
   clear: both;
-  background: #f7f1d9 url("../img/bg-map-pin.jpg");
-  background-position: -30px -105px;
-  min-height: 350px;
+  background: url("../img/bg-map-pin.jpg") no-repeat;
+  background-position: center -105px;
 }
 
-.map .address {
+.address {
   float: right;
   width: 310px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 15px;
   padding-top: 30px;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 30px;
-  margin-top: 40px;
-  margin-bottom: 40px;
   background-color: #fefefe;
 }
 
