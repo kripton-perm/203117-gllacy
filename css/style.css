@@ -95,7 +95,7 @@ body {
 }
 
 .main-navigation a:hover {
-  background-color: #ffffff;
+  background-color: #f7f6f3;
   color: #000000;
 }
 
@@ -104,10 +104,11 @@ body {
 }
 
 .main-navigation a:active {
-  background-color: rgba(248, 247, 244, 0.988);
+  background-color: #ededed;
   color: #000000;
-  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+  box-shadow: inset 0px 2px 1px 0px #696969;
 }
+
 
 
 .active > a {
@@ -319,6 +320,17 @@ body {
   display: none;
 }
 
+.search:hover::after, .login:hover::after, .cart:hover::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  display: block;
+  width: 300px;
+  height: 40px;
+  background-color: transparent;
+}
+
 .search:hover .search-form,
 .login:hover .login-form,
 .empty:hover .order,
@@ -342,7 +354,7 @@ body {
 }
 
 .search:hover::before {
-  background-position: -2px -587px;
+  background-position: -2px -587px;F
 }
 
 .login > a {
@@ -520,9 +532,9 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+  background-image: linear-gradient(90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 1px 2px 0px #ac1000;
 }
-
 
 .header-info {
   float: right;
