@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header index">
       <div class="container clearfix">
-        <img class="menu-logo" src="img/menu-logo.png" alt="Gllacy" width="154" height="64">
+        <a><img class="menu-logo" src="img/menu-logo.png" alt="Gllacy" width="154" height="64"></a>
         <nav class="main-navigation">
           <ul>
             <li class="catalog">
@@ -141,8 +142,10 @@
         </ul>
       </section>
       <section class="blog">
-        <h5>Новое в нашем блоге</h5>
-        <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+        <div class="blog-text">
+          <h5>Новое в нашем блоге</h5>
+          <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+        </div>
       </section>
       <section class="subscribe">
         <div class="subscribe-inner">
@@ -185,12 +188,15 @@
           <li><a href="#" class="social-btn social-btn-vk">Вконтакте</a></li>
         </ul>
           <ul class="footer-info">
-          <li><a href="#" class="special-info">Для поставщиков</a></li>
+          <li class="special-info"><a href="#">Для поставщиков</a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
           <section class="footer-copyright">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/htmlacademy-logo.png" alt="Интенсив Базовый HTML и CSS" width="108" height="38">
+          </a>
           <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2017</p>
         </section>
         </div>
