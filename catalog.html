@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="content-wrapper clearfix">
-        <a href="index.html">
+    <div class="site-wrapper">
+      <div class="content-wrapper">
+        <header class="main-header clearfix">
+          <a href="index.html">
           <img class="menu-logo" src="img/menu-logo.png" alt="Gllacy" width="154" height="64">
         </a>
-        <nav class="main-navigation">
+          <nav class="main-navigation">
           <ul>
             <li class="active catalog">
               <a>Каталог</a>
@@ -33,7 +34,7 @@
             </li>
           </ul>
         </nav>
-        <div class="user-block">
+          <div class="user-block">
           <div class="search">
             <a href="#"></a>
             <form action="some-address.ru" class="search-form"
@@ -84,13 +85,12 @@
             </div>
           </div>
         </div>
-        <div class="header-info">
+          <div class="header-info">
           <span class="time">С 10 до 20, ежедневно</span>
           <span class="phone">8 812 450-25-25</span>
-        </div>
-      </div>  
-    </header>
-    <main class="content-wrapper clearfix">
+        </div>  
+        </header>
+        <main class="clearfix">
       <ul class="breadcrumbs">
         <li>
           <a href="index.html">Главная</a>
@@ -153,21 +153,31 @@
         <fieldset class="filler">
           <legend>Наполнители:</legend>
           <div class="filler-inner">
-            <label>
-            <input type="checkbox" name="chocolate" checked>шоколадные
-          </label>
-            <label>
-            <input type="checkbox" name="sugar" checked>сахарные присыпки
-          </label>
-            <label>
-            <input type="checkbox" name="fruits">фрукты
-          </label>
-            <label>
-            <input type="checkbox" name="syrups">сиропы
-          </label>
-            <label>
-            <input type="checkbox" name="jams">джемы
-          </label>
+            <label class="filler-checkbox">
+              <input type="checkbox" name="chocolate" checked disabled>
+              <span class="checkbox-indicator"></span>
+              <span>шоколадные</span>
+            </label>
+            <label class="filler-checkbox">
+              <input type="checkbox" name="sugar" checked>
+              <span class="checkbox-indicator"></span>
+              <span>сахарные присыпки</span>
+            </label>
+            <label class="filler-checkbox">
+              <input type="checkbox" name="fruits">
+              <span class="checkbox-indicator"></span>
+              <span>фрукты</span>
+            </label>
+            <label class="filler-checkbox">
+              <input type="checkbox" name="syrups" disabled>
+              <span class="checkbox-indicator"></span>
+              <span>сиропы</span>
+            </label>
+            <label class="filler-checkbox">
+              <input type="checkbox" name="jams">
+              <span class="checkbox-indicator"></span>
+              <span>джемы</span>
+            </label>
           </div>
         </fieldset>
         <button type="submit">Применить</button>
@@ -300,9 +310,8 @@
         <li><a href="#">5</a></li>
       </ul>
     </main>
-    <footer class="main-footer">
-      <div class="content-wrapper">
-        <div class="footer-flex">
+        <footer class="main-footer">
+          <div class="footer-flex">
           <ul class="footer-social">
           <li><a href="#" class="social-btn social-btn-twitter">Твиттер</a></li>
           <li><a href="#" class="social-btn social-btn-inst">Инстаграм</a></li>
@@ -322,7 +331,8 @@
             <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2017</p>
         </section>
         </div>
+        </footer> 
       </div>
-    </footer> 
+    </div>
   </body>
 </html>

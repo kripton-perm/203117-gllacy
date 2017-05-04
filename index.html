@@ -86,7 +86,7 @@
           </div>
       </section>
         <main>
-      <section class="offer clearfix">
+          <section class="offer clearfix">
         <div class="offer-left">
           <h3 class="offer-title">Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -98,7 +98,7 @@
           <a href="#" class="btn">Хочу шоколадки!</a>
         </div>
       </section>
-      <section class="hit-gallery">
+          <section class="hit-gallery">
         <div class="gallery-item">
           <img src="img/gallery-1.jpg" alt="Хит-1" width="267" height="267">
           <div class="price">
@@ -140,7 +140,7 @@
           <a class="btn view" href="#">Быстрый просмотр</a>
         </div>
       </section>
-      <section class="about">
+          <section class="about">
         <h4>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h4>
         <ul class="clearfix">
           <li><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
@@ -149,13 +149,13 @@
           <li><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
         </ul>
       </section>
-      <section class="blog">
+          <section class="blog">
         <div class="blog-text">
           <h5>Новое в нашем блоге</h5>
           <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
         </div>
       </section>
-      <section class="subscribe">
+          <section class="subscribe">
         <div class="subscribe-inner">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form action="some-address.ru" class="subscribe-form clearfix" method="post">
@@ -164,16 +164,22 @@
         </form>
         </div>
       </section>
-      <div class="feedback">
-        <h4>Мы обязательно вам ответим!</h4>
-          <form action="some-address.ru" class="feedback-form" method="post">
-            <input type="text" name="name" placeholder="Как вас зовут?">
-            <input type="email" name="mail" placeholder="Ваша почта для ответа?">
-            <textarea name="additional" cols="30" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+          <div class="modal-feedback">
+            <button class="modal-feedback-close" type="button" title="Закрыть">
+              Закрыть
+            </button>
+            <h4>Мы обязательно вам ответим!</h4>
+            <form action="some-address.ru" class="feedback-form" method="post">
+            <input id="name" type="text" name="name" placeholder="Как вас зовут?" required>
+            <label for="name">Как вас зовут?</label>
+            <input id="email" type="email" name="mail" placeholder="Ваша почта для ответа?" required>
+            <label for="email">Ваша почта для ответа?</label>
+            <textarea id="additional" name="additional" cols="30" rows="5" placeholder="Напишите что-нибудь..." required></textarea>
+            <label for="additional">Напишите что-нибудь...</label>
             <button class="btn" type="submit">Отправить</button>
           </form>
       </div>
-    </main>
+        </main>
       </div>
     </div>
     <section class="map clearfix">
@@ -216,5 +222,6 @@
     </footer>
       </div>
     </div>
+    <div class="modal-overlay"></div>
   </body>
 </html>
