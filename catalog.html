@@ -104,11 +104,12 @@
       <form action="some-address.ru" class="choose-form" method="get">
         <label class="select">Сортировка
           <select name="sort">
-          <option value="1">по популярности</option>
-          <option value="2">сначала недорогие</option>
-          <option value="3">сначала дорогие</option>
-          <option value="4">по жирности</option>
-        </select>
+            <option value="1">по популярности</option>
+            <option value="2">сначала недорогие</option>
+            <option value="3">сначала дорогие</option>
+            <option value="4">по жирности</option>
+          </select>
+          <div class="select-indicator"></div>
         </label>
         
         <div class="range-filter">
@@ -136,18 +137,26 @@
         <fieldset class="fat">
           <legend>Жирность:</legend>
           <div class="fat-inner">
-            <label>
-            <input type="radio" name="fat" value="0%">0%
-          </label>
-            <label>
-            <input type="radio" name="fat" value="до 10%" checked>до 10%
-          </label>
-            <label>
-            <input type="radio" name="fat" value="до 30%">до 30%
-          </label>
-            <label>
-            <input type="radio" name="fat" value="выше 30%">выше 30%
-          </label>
+            <label class="fat-radio">
+              <input type="radio" name="fat" value="0%">
+              <span class="radio-indicator"></span>
+              <span>0%</span>
+            </label>
+            <label class="fat-radio">
+              <input type="radio" name="fat" value="до 10%" checked>
+              <span class="radio-indicator"></span>
+              <span>до 10%</span>
+            </label>
+            <label class="fat-radio">
+              <input type="radio" name="fat" value="до 30%" checked disabled>
+              <span class="radio-indicator"></span>
+              <span>до 30%</span>
+            </label>
+            <label class="fat-radio">
+              <input type="radio" name="fat" value="выше 30%">
+              <span class="radio-indicator"></span>
+              <span>выше 30%</span>
+            </label>
           </div>
         </fieldset>
         <fieldset class="filler">
