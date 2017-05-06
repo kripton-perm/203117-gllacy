@@ -41,7 +41,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 27px;
-  outline: 1px solid red;
 }
 
 .slider {
@@ -201,7 +200,7 @@ body > input[type="radio"] {
   vertical-align: top;
 }
 
-.main-navigation a, .catalog > a {
+.main-navigation a, .catalog > a, .active > a {
   position: relative;
   display: block;
   padding: 0;
@@ -220,7 +219,7 @@ body > input[type="radio"] {
   text-decoration: none;
 }
 
-.main-navigation a:hover, .catalog:hover > a {
+.main-navigation a:hover, .catalog:hover > a, .active:hover > a {
   margin: 0;
   margin-top: 23px;
   border-radius: 25px;
@@ -241,18 +240,13 @@ body > input[type="radio"] {
 }
 
 .active > a {
-  margin: 0;
-  margin-top: 23px;
-  margin-right: 12px;
-  border-radius: 20px;
-  padding: 7px 14px;
   background-color: #d07058;
+  padding: 7px 14px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 23px;
+  border-radius: 25px;
 }
-/*
-.active > a:hover {
-  margin-right: 12px;
-}
-*/
 
 .catalog {
   position: relative;
@@ -966,7 +960,7 @@ body > input[type="radio"] {
 
 .hit-gallery,
 .catalog-gallery {
-  margin-bottom: 40px;
+  margin-bottom: 47px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -978,7 +972,7 @@ body > input[type="radio"] {
 }
 
 .hit-gallery {
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .gallery-item {
@@ -988,7 +982,7 @@ body > input[type="radio"] {
   padding-left: 12px;
   padding-right: 12px;
   margin-right: -12px;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   text-align: center;
   padding-top: 6px;
   padding-bottom: 0px;
@@ -1062,6 +1056,10 @@ body > input[type="radio"] {
   height: 32px;
   background: url(../img/sprite.png);
   background-position: -10px -632px;
+}
+
+.gallery-item .item-name {
+  width: 96%;
 }
 
 .gallery-item a {
@@ -1170,7 +1168,7 @@ body > input[type="radio"] {
 .blog {
   float: left;
   width: 560px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding-left: 20px;
   padding-right: 30px;
   padding-top: 25px;
@@ -1181,7 +1179,7 @@ body > input[type="radio"] {
 }
 
 .blog-text {
-  margin-bottom: 45px;
+  margin-bottom: 42px;
   margin-right:  220px;
   padding: 0;
 }
@@ -1201,11 +1199,11 @@ body > input[type="radio"] {
   padding: 0;
   color: #323232;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 32px;
   font-weight: bold;
   border-bottom: 2px solid #323232;
-  background-color: red;
-  padding-right: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
 }
 
 .subscribe {
@@ -1644,6 +1642,7 @@ body > input[type="radio"] {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-top: -23px;
 }
 
 .breadcrumbs li {
@@ -1656,14 +1655,13 @@ body > input[type="radio"] {
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
-  margin-right: 20px;
+  margin-right: 18px;
 }
-
 
 .breadcrumbs a::after {
   position: absolute;
   color: #ffffff;
-  right: -16px;
+  right: -15px;
   top: 0;
   content: "»";
   font-size: 14px;
@@ -1683,12 +1681,11 @@ body > input[type="radio"] {
   display: none;
 }
 
-
 .content-wrapper h1 {
   margin: 0;
   padding: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 3px;
+  margin-bottom: 24px;
   color: #ffffff;
   font-size: 35px;
   line-height: 41px;
@@ -1696,8 +1693,8 @@ body > input[type="radio"] {
 }
 
 .choose-form {
-  width: 880px;
-  margin-bottom: 35px;
+  width: 860px;
+  margin-bottom: 34px;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1717,6 +1714,7 @@ body > input[type="radio"] {
   -ms-flex-preferred-size: 200px;
   flex-basis: 193px;
   padding-left: 15px;
+  margin-bottom: 15px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -1726,13 +1724,12 @@ body > input[type="radio"] {
   width: 193px;
   position: relative;
   border: none;
-  margin-top: 8px;
-  margin-bottom: 10px;
+  margin-top: 7px;
   margin-left: -15px;
   padding-left: 11px;
   padding-right: 10px;
-  padding-top: 7.6px;
-  padding-bottom: 7.6px;
+  padding-top: 7px;
+  padding-bottom: 8px;
   border-radius: 20px;
   color: transparent;
   background-color: transparent;
@@ -1749,8 +1746,8 @@ body > input[type="radio"] {
   content: "";
   position: absolute;
   z-index: 20;
-  right: -17px;
-  bottom: 0px;
+  right: -15px;
+  bottom: -1px;
   width: 9px;
   height: 9px;
   background-color: #849d8f;
@@ -1758,7 +1755,7 @@ body > input[type="radio"] {
 
 .select-indicator::after {
   z-index: 30;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 select:hover + .select-indicator::before,
@@ -1768,8 +1765,8 @@ select:hover + .select-indicator::after{
 
 .select-indicator {
   position: absolute;
-  right: 17px;
-  bottom: 20px;
+  right: 15px;
+  bottom: 22px;
   content: "";
   width: 0px;
   height: 0px;
@@ -1793,7 +1790,7 @@ select:hover + .select-indicator {
 .range-controls {
   position: relative;
   height: 36px;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 18px;
@@ -1806,17 +1803,17 @@ select:hover + .select-indicator {
 }
 
 .range-controls .bar {
-  margin-left: 10%;
-  width: 50%;
+  margin-left: 16%;
+  width: 53%;
   height: 2px;
   background-color: #ffffff;
 }
 
 .range-controls .toggle {
   position: absolute;
-  top: 8px;
-  width: 20px;
-  height: 20px;
+  top: 6px;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
   background-color: #ffffff;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
@@ -1824,11 +1821,11 @@ select:hover + .select-indicator {
 }
 
 .range-controls .toggle-min {
-  left: 25px;
+  left: 35px;
 }
 
 .range-controls .toggle-max {
-  left: 120px;
+  left: 135px;
 }
 
 .price-controls {
@@ -1843,7 +1840,8 @@ select:hover + .select-indicator {
   line-height: 16px;
   font-weight: 500;
   width: auto;
-  margin-left: 7px;
+  margin-left: 15px;
+  margin-right: -13px;
 }
 
 .price-controls input {
@@ -1870,7 +1868,6 @@ select:hover + .select-indicator {
   padding: 0;
 }
 
-
 .choose-form .filler {
   -ms-flex-preferred-size: 700px;
   flex-basis: 700px;
@@ -1883,14 +1880,14 @@ select:hover + .select-indicator {
 
 .filler legend, .fat legend {
   padding-left: 14px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
 }
 
 .filler-inner, .fat-inner {
-  padding: 9.2px;
+  padding: 9px;
   padding-left: 15px;
   background-color: rgba(255, 255, 244, 0.2);
   border-radius: 20px;
@@ -1920,7 +1917,7 @@ select:hover + .select-indicator {
 .fat-radio input[type="radio"] + .radio-indicator {
   position: absolute;
   left: 0;
-  top: 0;
+  top: -2px;
   width: 20px;
   height: 20px;
   border: 1px solid #ffffff;
@@ -2060,7 +2057,8 @@ select:hover + .select-indicator {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-right: 20px;
+  padding-right: 25px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2075,6 +2073,7 @@ select:hover + .select-indicator {
   width: 27px;
   height: 27px;
   border-radius: 50%;
+  margin-left: 2px;
 }
 
 .catalog-paginator li:hover {
@@ -2086,7 +2085,7 @@ select:hover + .select-indicator {
 }
 
 .catalog-paginator li:active a {
-  color: #000000;
+  color: #323232;
 }
 
 .catalog-paginator a {
@@ -2098,7 +2097,7 @@ select:hover + .select-indicator {
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 18px;
 }
 
@@ -2114,7 +2113,7 @@ select:hover + .select-indicator {
 }
 
 .catalog-paginator::before {
-  right: 165px;
+  right: 175px;
   top: 8px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -2140,7 +2139,7 @@ select:hover + .select-indicator {
 .catalog-page .main-footer::before {
   content: "";
   position: absolute;
-  bottom: 110px;
+  bottom: 115px;
   left: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.3);
