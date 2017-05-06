@@ -201,7 +201,7 @@ body > input[type="radio"] {
   vertical-align: top;
 }
 
-.main-navigation a {
+.main-navigation a, .catalog > a {
   position: relative;
   display: block;
   padding: 0;
@@ -209,7 +209,7 @@ body > input[type="radio"] {
   margin-left: 15px;
   padding-top: 10px;
   margin-bottom: 30px;
-  margin-right: 14px;
+  margin-right: 13px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   
   color: #ffffff;
@@ -220,17 +220,15 @@ body > input[type="radio"] {
   text-decoration: none;
 }
 
-.main-navigation a:hover {
+.main-navigation a:hover, .catalog:hover > a {
   margin: 0;
   margin-top: 23px;
-  margin-right: 12px;
   border-radius: 25px;
   padding: 7px 14px;
   
   background-color: #f7f6f3;
   color: #000000;
 }
-
 
 .active a::before {
   opacity: 0;
@@ -250,13 +248,14 @@ body > input[type="radio"] {
   padding: 7px 14px;
   background-color: #d07058;
 }
+/*
+.active > a:hover {
+  margin-right: 12px;
+}
+*/
 
 .catalog {
   position: relative;
-}
-
-.catalog > a {
-  margin-bottom: 0;
 }
 
 .catalog .secondary {
@@ -1189,7 +1188,7 @@ body > input[type="radio"] {
 
 .blog h5 {
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   padding: 0;
   color: #323232;
   font-size: 16px;
@@ -1205,6 +1204,8 @@ body > input[type="radio"] {
   line-height: 30px;
   font-weight: bold;
   border-bottom: 2px solid #323232;
+  background-color: red;
+  padding-right: 5px;
 }
 
 .subscribe {
@@ -1488,7 +1489,7 @@ body > input[type="radio"] {
 .main-footer {
   position: relative;
   background-color: inherit;
-  padding-top: 24px;
+  padding-top: 25px;
   padding-bottom: 30px;
 }
 
@@ -1576,14 +1577,14 @@ body > input[type="radio"] {
 }
 
 .footer-info li:nth-child(2n-1) {
-  padding-left: 17px;
+  padding-left: 16px;
 }
 
 .footer-info::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: -11px;
+  top: 6px;
+  left: -13px;
   display: block;
   width: 15px;
   height: 13px;
@@ -1603,7 +1604,8 @@ body > input[type="radio"] {
 
 .footer-copyright {
   position: relative;
-  top: -4px;
+  top: -5px;
+  left: -2px;
 }
 
 .footer-copyright img {
@@ -1616,7 +1618,8 @@ body > input[type="radio"] {
 .footer-copyright p {
   margin: 0;
   padding: 0;
-  margin-top: -3px;
+  margin-top: -2px;
+  margin-left: -1px;
   color: #ffffff;
   font-size: 12px;
   line-height: 18px;
