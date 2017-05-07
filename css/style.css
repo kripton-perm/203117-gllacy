@@ -29,7 +29,8 @@ body {
 }
 
 .site-wrapper.catalog-page {
-  background: #849d8f url("../img/light.png") repeat-x;
+  background: #849d8f -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), transparent 647px);
+  background: #849d8f linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent 647px);
 }
 
 
