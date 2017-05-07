@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.css">
@@ -37,17 +38,17 @@
           <div class="user-block">
           <div class="search">
             <a href="#"></a>
-            <form action="some-address.ru" class="search-form"
+            <form action="https://echo.htmlacademy.ru/" class="search-form"
                   method="get">
-              <input type="text" placeholder="Что ищем?" name="search">
+              <input type="text" placeholder="Что ищем?" name="search" required>
             </form>
           </div>
           <div class="login">
             <a href="#">Вход</a>
-            <form action="some-address.ru" class="login-form"
+            <form action="https://echo.htmlacademy.ru/" class="login-form"
                   method="post">
-              <input type="email" name="mail" placeholder="Электронная почта">
-              <input type="password" name="password" placeholder="Пароль">
+              <input type="email" name="mail" placeholder="Электронная почта" required>
+              <input type="password" name="password" placeholder="Пароль" required>
               <button class="btn" type="submit">Войти</button>
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
@@ -100,7 +101,7 @@
         <li><a>Сливочное</a></li>
       </ul>
       <h1>Сливочное мороженое</h1>
-      <form action="some-address.ru" class="choose-form" method="get">
+      <form action="https://echo.htmlacademy.ru/" class="choose-form" method="get">
         <label class="select">Сортировка:
           <select name="sort">
             <option value="1">по популярности</option>
@@ -108,7 +109,7 @@
             <option value="3">сначала дорогие</option>
             <option value="4">по жирности</option>
           </select>
-          <div class="select-indicator"></div>
+          <span class="select-indicator"></span>
         </label>
         
         <div class="range-filter">
@@ -313,11 +314,13 @@
         </div>
       </div>
       <ul class="catalog-paginator">
+        <li class="prev disable"><a href="#">Назад</a></li>
         <li class="page-current"><a>1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
         <li><a href="#">5</a></li>
+        <li class="next enable"><a href="#">Вперёд</a></li>
       </ul>
     </main>
         <footer class="main-footer">
