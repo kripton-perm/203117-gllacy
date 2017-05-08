@@ -25,17 +25,11 @@ body {
 
 .site-wrapper {
   min-width: 1240px;
-  /*transition: background 3s ease;*/
 }
 
 .site-wrapper.catalog-page {
   background: #849d8f -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), transparent 647px);
   background: #849d8f linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent 647px);
-}
-
-
-.site-wrapper-2 {
-  min-width: 1240px;
 }
 
 .content-wrapper {
@@ -156,7 +150,6 @@ body > input[type="radio"] {
   background: #9d8b84 url("../img/slide-3.png") no-repeat top center;
 }
 
-
 .clearfix::after {
   content: "";
   display: table;
@@ -166,8 +159,6 @@ body > input[type="radio"] {
 .main-header {
   color: #ffffff;
 }
-
-
 
 .menu-logo {
   float: left;
@@ -196,7 +187,9 @@ body > input[type="radio"] {
   vertical-align: top;
 }
 
-.main-navigation a, .catalog > a, .active > a {
+.main-navigation a,
+.catalog > a,
+.active > a {
   position: relative;
   display: block;
   padding: 0;
@@ -215,7 +208,9 @@ body > input[type="radio"] {
   text-decoration: none;
 }
 
-.main-navigation a:hover, .catalog:hover > a, .active:hover > a {
+.main-navigation a:hover,
+.catalog:hover > a,
+.active:hover > a {
   margin: 0;
   margin-top: 23px;
   border-radius: 25px;
@@ -267,7 +262,6 @@ body > input[type="radio"] {
   background-color: rgb(248, 247, 244);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
-
 
 .secondary li {
   display: block;
@@ -371,7 +365,9 @@ body > input[type="radio"] {
   border-radius: 50%;
 }
 
-.search a, .login a, .cart a {
+.search a,
+.login a,
+.cart a {
   position: relative;
   color: #ffffff;
   text-decoration: none;
@@ -419,10 +415,6 @@ body > input[type="radio"] {
   box-shadow: inset 0px 2px 2px 0px #952718;
 }
 
-
-
-/*Общие стили для ссылок 1*/
-
 .gallery-item a,
 .breadcrumbs a,
 .footer-info a,
@@ -450,8 +442,6 @@ body > input[type="radio"] {
   border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
 
-/*Общие стили для ссылок 2*/
-
 .login-form a,
 .blog a {
   padding: 0;
@@ -473,20 +463,22 @@ body > input[type="radio"] {
   border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
-/*Общие стили для ссылок*/
-
-.login > a, .cart > a {
+.login > a,
+.cart > a {
   display: block;
   padding: 8px 0;
 }
 
-.login, .cart {
+.login,
+.cart {
   border-radius: 16px;
   margin-left: 10px;
 }
 
 
-.search, .login, .cart {
+.search,
+.login,
+.cart {
   background-color: rgba(255, 255, 255, 0.2);
   position: relative;
 }
@@ -606,7 +598,10 @@ body > input[type="radio"] {
   padding-right: 25px;
 }
 
-.search-form, .login-form, .empty .order, .not-empty .order {
+.search-form,
+.login-form,
+.empty .order,
+.not-empty .order {
   display: none;
 }
 
@@ -649,7 +644,10 @@ body > input[type="radio"] {
   z-index: 100;
 }
 
-.search:hover, .login:hover, .empty:hover, .not-empty {
+.search:hover,
+.login:hover,
+.empty:hover,
+.not-empty {
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -798,7 +796,8 @@ body > input[type="radio"] {
   vertical-align: top;
 }
 
-.order-info tr::before, .order-info tr::after {
+.order-info tr::before,
+.order-info tr::after {
   content: "";
   position: absolute;
   left: 20px;
@@ -814,7 +813,7 @@ body > input[type="radio"] {
 }
 
 .order-info tr:last-child::before,
-.order-info tr:last-child::after{
+.order-info tr:last-child::after {
   top: 90px;  
 }
 
@@ -900,15 +899,14 @@ body > input[type="radio"] {
   box-shadow: 0px 1px 2px 0px #ac1000;
 }
 
-
-
 .header-info {
   float: right;
   width: 200px;
   font-weight: bold;
 }
 
-.header-info .time, .header-info .phone {
+.header-info .time,
+.header-info .phone {
   float: right;
 }
 
@@ -1184,6 +1182,7 @@ body > input[type="radio"] {
   margin-left: 0;
   margin-right: -8px;
 }
+
 .about li::before {
   position: absolute;
   content: "";
@@ -1204,7 +1203,6 @@ body > input[type="radio"] {
   top: 9px;
   background-position: -10px -262px;
 }
-
 
 .about li:nth-child(3)::before {
   background-position: -10px -193px;
@@ -1351,7 +1349,8 @@ body > input[type="radio"] {
   background-color: #fefefe;
 }
 
-.address h4, .address h5 {
+.address h4,
+.address h5 {
   margin: 0;
   padding: 0;
   margin-right: 50px;
@@ -1423,7 +1422,8 @@ body > input[type="radio"] {
   background-color: transparent;
 }
 
-.modal-feedback-close::before, .modal-feedback-close::after {
+.modal-feedback-close::before,
+.modal-feedback-close::after {
   position: absolute;
   content: "";
   display: block;
@@ -1529,6 +1529,7 @@ body > input[type="radio"] {
   outline: none;
   color: #323232;
 }
+
 .feedback-form textarea:focus {
   padding: 8px 14px;
 }
@@ -1606,7 +1607,8 @@ body > input[type="radio"] {
   opacity: 0.8;
 }
 
-.social-btn:hover, .social-btn:active {
+.social-btn:hover,
+.social-btn:active {
   border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
@@ -1787,6 +1789,7 @@ body > input[type="radio"] {
 }
 
 .choose-form .select {
+  display: block;
   position: relative;
   width: 193px;
   padding-left: 17px;
@@ -1924,7 +1927,6 @@ select:hover + .select-indicator {
   border: none;
 }
 
-
 .choose-form .fat {
   width: 415px;
   font-size: 14px;
@@ -1943,7 +1945,8 @@ select:hover + .select-indicator {
   padding: 0;
 }
 
-.filler legend, .fat legend {
+.filler legend,
+.fat legend {
   padding-left: 14px;
   margin-bottom: 7px;
   font-size: 14px;
@@ -1951,7 +1954,8 @@ select:hover + .select-indicator {
   font-weight: 500;
 }
 
-.filler-inner, .fat-inner {
+.filler-inner,
+.fat-inner {
   padding: 9px;
   padding-left: 15px;
   background-color: rgba(255, 255, 244, 0.2);
@@ -1964,14 +1968,15 @@ select:hover + .select-indicator {
   justify-content: space-between;
 }
 
-
-.filler-inner label, .fat-inner label {
+.filler-inner label,
+.fat-inner label {
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
 }
 
-.filler-checkbox input[type="checkbox"], .fat-radio input[type="radio"] {
+.filler-checkbox input[type="checkbox"],
+.fat-radio input[type="radio"] {
   display: none;
 }
 
@@ -2231,8 +2236,6 @@ select:hover + .select-indicator {
   cursor: default;
 }
 
-
-
 .catalog-page .main-footer::before {
   content: "";
   position: absolute;
@@ -2253,14 +2256,3 @@ select:hover + .select-indicator {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-
-
-
-
-
-
-
-
-
-
