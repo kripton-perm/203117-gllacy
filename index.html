@@ -180,24 +180,9 @@
             </form>
           </div>
         </section>
-        <div class="modal-feedback">
-          <button class="modal-feedback-close" type="button" title="Закрыть">
-            Закрыть
-          </button>
-          <h4>Мы обязательно вам ответим!</h4>
-          <form action="https://echo.htmlacademy.ru/" class="feedback-form" method="post">
-            <input id="name" type="text" name="name" placeholder="Как вас зовут?" required>
-            <label for="name">Как вас зовут?</label>
-            <input id="email" type="email" name="mail" placeholder="Ваша почта для ответа?" required>
-            <label for="email">Ваша почта для ответа?</label>
-            <textarea id="additional" name="additional" cols="30" rows="5" placeholder="Напишите что-нибудь..." required></textarea>
-            <label for="additional">Напишите что-нибудь...</label>
-            <button class="btn" type="submit">Отправить</button>
-          </form>
-        </div>
       </main>
     </div>
-    <section class="map clearfix">
+    <section class="map clearfix" id="yandex-map">
       <div class="content-wrapper">
         <div class="address">
           <h4>Адрес главного офиса и офлайн магазина:</h4>
@@ -245,6 +230,22 @@
     </div>
   </div>
   <div class="modal-overlay"></div>
+  <div class="modal-feedback">
+          <button class="modal-feedback-close" type="button" title="Закрыть">
+            Закрыть
+          </button>
+          <h4>Мы обязательно вам ответим!</h4>
+          <form action="https://echo.htmlacademy.ru/" class="feedback-form" method="post">
+            <input id="fio" type="text" name="fio" placeholder="Как вас зовут?">
+            <label for="name">Как вас зовут?</label>
+            <input id="email" type="email" name="mail" placeholder="Ваша почта для ответа?">
+            <label for="email">Ваша почта для ответа?</label>
+            <textarea id="additional" name="additional" cols="30" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+            <label for="additional">Напишите что-нибудь...</label>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+        </div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
