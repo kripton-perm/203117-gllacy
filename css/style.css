@@ -40,10 +40,8 @@ body {
 
 .slider {
   position: relative;
-
   padding-top: 274px;
   margin-bottom: 40px;
-
   text-align: center;
   color: #ffffff;
 }
@@ -52,7 +50,6 @@ body {
   width: 700px;
   margin: 0 auto;
   margin-bottom: 30px;
-
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
@@ -61,7 +58,6 @@ body {
 .slide-btn {
   display: inline-block;
   padding: 10px 40px;
-
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
@@ -69,23 +65,22 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .slide-btn:hover {
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slide-btn:active {
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
@@ -96,9 +91,7 @@ body {
   width: 21px;
   height: 21px;
   margin-right: 8px;
-
   vertical-align: top;
-
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -114,7 +107,6 @@ body {
   bottom: 25px;
   left: 0;
   z-index: 20;
-
   font-size: 0;
 }
 
@@ -174,14 +166,12 @@ body > input[type="radio"] {
 .main-navigation ul {
   margin: 0;
   padding: 0;
-  
   list-style: none;
   font-size: 0;
 }
 
 .main-navigation li {
   display: inline-block;
-  
   font-size: 16px;
   line-height: 18px;
   vertical-align: top;
@@ -199,7 +189,6 @@ body > input[type="radio"] {
   margin-bottom: 30px;
   margin-right: 13px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  
   color: #ffffff;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -215,7 +204,6 @@ body > input[type="radio"] {
   margin-top: 23px;
   border-radius: 25px;
   padding: 7px 14px;
-  
   background-color: #f7f6f3;
   color: #000000;
 }
@@ -385,7 +373,6 @@ body > input[type="radio"] {
   box-shadow: 0px 2px 2px 0px #9e4334;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   border-radius: 25px;
-  
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -401,7 +388,6 @@ body > input[type="radio"] {
   box-shadow: 0px 2px 2px 0px #550800;
   text-shadow: none;
 }
-
 
 .btn:hover {
   background-image: -webkit-linear-gradient(bottom, #ec6f5e 0%, #f58669 100%);
@@ -475,7 +461,6 @@ body > input[type="radio"] {
   margin-left: 10px;
 }
 
-
 .search,
 .login,
 .cart {
@@ -512,12 +497,12 @@ body > input[type="radio"] {
 
 .search-form input:hover {
   padding-left: 14px;
-  border: 2px solid #9a9a9a;
+  border: 2px solid rgba(154, 154, 154, 0.5);
   outline: none;
 }
 
 .search-form input:focus {
-  border: 2px solid #2e88e4;
+  border: 2px solid rgba(46, 136, 228, 0.5);
   padding-left: 14px;
   outline: none;
   color: #323232;
@@ -562,14 +547,14 @@ body > input[type="radio"] {
 
 .login-form input[type="email"]:hover,
 .login-form input[type="password"]:hover {
-  border: 2px solid #9a9a9a;
+  border: 2px solid rgba(154, 154, 154, 0.5);
   padding-left: 14px;
   outline: none;
 }
 
 .login-form input[type="password"]:focus,
 .login-form input[type="email"]:focus {
-  border: 2px solid #2e88e4;
+  border: 2px solid rgba(46, 136, 228, 0.5);
   padding-left: 14px;
   outline: none;
   color: #323232;
@@ -654,7 +639,6 @@ body > input[type="radio"] {
 .search::before {
   position: absolute;
   content: "";
-  
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -677,11 +661,9 @@ body > input[type="radio"] {
 .login::before {
   position: absolute;
   content: "";
-  
   width: 45px;
   height: 32px;
   border-radius: 16px;
-  
   background: transparent url("../img/sprite.png");
   background-position: 7px -474px;
 }
@@ -709,7 +691,6 @@ body > input[type="radio"] {
 .empty::before {
   position: absolute;
   content: "";
-  
   width: 45px;
   height: 32px;
   border-radius: 16px;
@@ -755,13 +736,11 @@ body > input[type="radio"] {
 .not-empty::before {
   position: absolute;
   content: "";
-  
   width: 45px;
   height: 32px;
   border-radius: 16px;
-  
   background: transparent url("../img/sprite.png");
-  background-position: 9px -434px;
+  background-position: 7px -434px;
 }
 
 .not-empty .order {
@@ -814,7 +793,7 @@ body > input[type="radio"] {
 
 .order-info tr:last-child::before,
 .order-info tr:last-child::after {
-  top: 90px;  
+  top: 90px;
 }
 
 .order-info tr::before {
@@ -937,7 +916,6 @@ body > input[type="radio"] {
   padding-right: 25px;
   padding-top: 17px;
   padding-bottom: 20px;
-  
   background: #5d0e1c url("../img/bg-offer-left.jpg");
   background-position: -50px -93px;
   border-radius: 15px;
@@ -951,7 +929,6 @@ body > input[type="radio"] {
   padding-right: 25px;
   padding-top: 17px;
   padding-bottom: 20px;
-  
   background: #5d0e1c url("../img/bg-offer-right.jpg");
   border-radius: 12px;
   background-position: -218px -104px;
@@ -1307,13 +1284,13 @@ body > input[type="radio"] {
 }
 
 .subscribe-form input:hover {
-  border: 2px solid #9a9a9a;
+  border: 2px solid rgba(154, 154, 154, 0.5);
   padding-left: 14px;
   outline: none;
 }
 
 .subscribe-form input:focus {
-  border: 2px solid #2e88e4;
+  border: 2px solid rgba(46, 136, 228, 0.5);
   padding-left: 14px;
   outline: none;
   color: #323232;
@@ -1330,9 +1307,18 @@ body > input[type="radio"] {
 }
 
 .map {
+  position: relative;
   clear: both;
+  min-height: 430px;
   background: url("../img/bg-map-pin.jpg") no-repeat;
   background-position: center -107px;
+  overflow: hidden;
+}
+
+.google-map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .address {
@@ -1340,7 +1326,6 @@ body > input[type="radio"] {
   position: relative;
   width: 301px;
   margin-top: 62px;
-  margin-bottom: 62px;
   border-radius: 15px;
   padding-top: 30px;
   padding-left: 25px;
@@ -1354,7 +1339,6 @@ body > input[type="radio"] {
   margin: 0;
   padding: 0;
   margin-right: 50px;
-  
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
@@ -1382,7 +1366,7 @@ body > input[type="radio"] {
   display: block;
   font-size: 14px;
   line-height: 20px;
-  font-weight: normal; 
+  font-weight: normal;
   margin-top: -3px;
 }
 
@@ -1584,7 +1568,7 @@ body > input[type="radio"] {
 
 .feedback-form input:hover,
 .feedback-form textarea:hover {
-  border: 2px solid #9a9a9a;
+  border: 2px solid rgba(154, 154, 154, 0.5);
   padding-left: 14px;
   outline: none;
 }
@@ -1595,7 +1579,7 @@ body > input[type="radio"] {
 
 .feedback-form input:focus,
 .feedback-form textarea:focus {
-  border: 2px solid #2e88e4;
+  border: 2px solid rgba(46, 136, 228, 0.5);
   padding-left: 14px;
   outline: none;
   color: #323232;
@@ -1605,22 +1589,10 @@ body > input[type="radio"] {
   padding: 8px 14px;
 }
 
-.feedback-form input:valid + label,
-.feedback-form textarea:valid + label {
-  color: #999999;
-}
-
 .feedback-form input:focus + label,
 .feedback-form textarea:focus + label {
-  color: #2e88e4;
+  color: #5b9ddf;
 }
-
-.feedback-form input:valid,
-.feedback-form textarea:valid {
-  font-weight: bold;
-  color: #323232;
-}
-
 
 .feedback-form .btn {
   display: block;
@@ -1672,7 +1644,6 @@ body > input[type="radio"] {
   width: 36px;
   height: 36px;
   border: 2px solid rgba(255, 255, 255, 0.5);
-  
   border-radius: 50%;
   background: transparent url("../img/sprite.png") no-repeat center;
   opacity: 0.8;
@@ -2051,7 +2022,8 @@ select:hover + .select-indicator {
   display: none;
 }
 
-.filler-checkbox, .fat-radio {
+.filler-checkbox,
+.fat-radio {
   position: relative;
   padding-left: 30px;
   padding-right: 10px;
@@ -2074,7 +2046,7 @@ select:hover + .select-indicator {
 }
 
 .filler-checkbox:hover input[type="checkbox"] + .checkbox-indicator,
-.fat-radio:hover input[type="radio"] + .radio-indicator{
+.fat-radio:hover input[type="radio"] + .radio-indicator {
   border-width: 2px;
 }
 

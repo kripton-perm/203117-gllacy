@@ -9,14 +9,14 @@ var fio = popup.querySelector("[name=fio]");
 var email = popup.querySelector("[name=mail]");
 var text = popup.querySelector("textarea");
     
-var storageFio = localStorage.getItem("fio");
-var storageEmail = localStorage.getItem("email");
+var storageFio = localStorage.getItem("fiostorage");
+var storageEmail = localStorage.getItem("emailstorage");
     
 link.addEventListener("click", function (event) {
   event.preventDefault();
   popup.classList.add("modal-feedback-show");
   overlay.classList.add("modal-overlay-show");
-      
+  
   if (storageFio) {
     fio.value = storageFio;
     if (storageEmail) {
@@ -43,8 +43,8 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
     popup.classList.add("modal-feedback-error");
   } else {
-    localStorage.setItem("fio", fio.value);
-    localStorage.setItem("email", email.value);
+      localStorage.setItem("fiostorage", fio.value);
+      localStorage.setItem("emailstorage", email.value);
   }
 });
     
@@ -52,6 +52,7 @@ window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
     if (popup.classList.contains("modal-feedback-show")) {
       popup.classList.remove("modal-feedback-show");
+      overlay.classList.remove("modal-overlay-show");
     }
   }
 });

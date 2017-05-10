@@ -7,7 +7,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -182,7 +182,10 @@
         </section>
       </main>
     </div>
-    <section class="map clearfix" id="yandex-map">
+    <section class="map clearfix">
+      <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123595!2d30.32089461555511!3d59.93879686904856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1494415655466" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
       <div class="content-wrapper">
         <div class="address">
           <h4>Адрес главного офиса и офлайн магазина:</h4>
@@ -199,13 +202,13 @@
         <div class="container">
           <div class="footer-flex">
             <ul class="footer-social">
-              <li><a href="#" class="social-btn social-btn-twitter">Твиттер</a>
+              <li><a href="#" class="social-btn social-btn-twitter" title="Твиттер">Твиттер</a>
               </li>
-              <li><a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+              <li><a href="#" class="social-btn social-btn-inst" title="Инстаграм">Инстаграм</a>
               </li>
-              <li><a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+              <li><a href="#" class="social-btn social-btn-fb" title="Фейсбук">Фейсбук</a>
               </li>
-              <li><a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+              <li><a href="#" class="social-btn social-btn-vk" title="Вконтакте">Вконтакте</a>
               </li>
             </ul>
             <ul class="footer-info">
@@ -219,7 +222,7 @@
               </li>
             </ul>
             <section class="footer-copyright">
-              <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <a href="https://htmlacademy.ru/intensive/htmlcss" title="Ссылка на Интенсив Базовый HTML и CSS">
                 <img src="img/htmlacademy-logo.png" alt="Интенсив Базовый HTML и CSS" width="108" height="38">
               </a>
               <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2017</p>
@@ -245,7 +248,7 @@
             <button class="btn" type="submit">Отправить</button>
           </form>
         </div>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
