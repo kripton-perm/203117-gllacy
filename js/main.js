@@ -9,19 +9,26 @@ var fio = popup.querySelector("[name=fio]");
 var email = popup.querySelector("[name=mail]");
 var text = popup.querySelector("textarea");
     
-var storage = localStorage.getItem("fio");
+var storageFio = localStorage.getItem("fio");
+var storageEmail = localStorage.getItem("email");
     
 link.addEventListener("click", function (event) {
   event.preventDefault();
   popup.classList.add("modal-feedback-show");
   overlay.classList.add("modal-overlay-show");
       
-  if (storage) {
-    fio.value = storage;
-    email.focus();
-  } else {
-    fio.focus();
+  if (storageFio) {
+    fio.value = storageFio;
+    if (storageEmail) {
+      email.value = storageEmail;
+      text.focus();
+    } else {
+        email.focus();
+    }
   }
+    else {
+      fio.focus();
+    }
 });
     
 close.addEventListener("click", function (event) {
@@ -37,6 +44,7 @@ form.addEventListener("submit", function (event) {
     popup.classList.add("modal-feedback-error");
   } else {
     localStorage.setItem("fio", fio.value);
+    localStorage.setItem("email", email.value);
   }
 });
     
